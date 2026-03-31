@@ -37,13 +37,14 @@ Alternatively, use the **CLI Cleaner** (`DeviceCleanerAndroid.py`) to quickly de
 
 ### Via Homebrew (macOS / Linux)
 ```bash
-brew tap <your-username>/device-cleaner
+brew tap ZahinTapadar/tap
 brew install adb-app-manager
 ```
+*Note: Homebrew automatically manages ADB (`android-platform-tools`) and seamlessly configures the Python environment for you.*
 
 ### Manual Installation
 ```bash
-git clone https://github.com/<your-username>/adb-app-manager.git
+git clone https://github.com/ZahinTapadar/adb-app-manager.git
 cd adb-app-manager
 pip install -r requirements.txt
 ```
@@ -53,9 +54,9 @@ pip install -r requirements.txt
 Make sure your Android device is connected and authorized (`adb devices`).
 
 ### 1. The Interactive TUI (Recommended)
-Launch the beautifully designed interactive textual interface:
+Launch the beautifully designed interactive textual interface via the Homebrew command:
 ```bash
-python adb_manager.py
+adb-app-manager
 ```
 
 **Keybindings:**
